@@ -1,4 +1,15 @@
+@font-face {
+    font-family: Gilroy;
+    font-weight: normal;
+    src: url("../../assets/fonts/Gilroy/Gilroy-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: Gilroy-bold;
+    font-weight: normal;
+    src: url("../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf") format("opentype");
+}
 body{
+    font-family: 'Gilroy';
     width: 100%;
     margin: 0;
     padding: 0;
@@ -10,6 +21,7 @@ header{
 nav .logo{
     float: left;
     cursor: pointer;
+    padding-bottom: 40px;
 
 }
 nav .humburger{
@@ -17,3 +29,38 @@ nav .humburger{
     float: right;
     padding-right: 20px;
 }
+/* Title styling */
+.contact-us-header{
+    position: relative;
+    /* width: 250px; */
+    padding-bottom: 51px;
+}
+
+.contact-heading{
+    position: absolute;
+    width: 244px;
+    height: 74px;
+    left: 561px;
+    top: 61px;
+    /* font-family: 'Gilroy-bold'; */
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+}
+.contact-heading-description{
+    position: absolute;
+    width: 780px;
+    height: 60px;
+    left: 293px;
+    top: 141px;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* End of title styling */
