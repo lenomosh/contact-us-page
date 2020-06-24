@@ -75,7 +75,7 @@ nav .humburger{
     float: right;
 }
 .address p:not(:first-child),
-.phone p,
+.phone p:not(:first-of-type),
 .online-service p:not(:first-child){
     
     font-size: 16px;
@@ -84,9 +84,16 @@ nav .humburger{
     color: #1F3F68;
     opacity: 0.6;
 }
+span>svg{
+    line-height: 26px;
+    vertical-align: middle;
+}
 .address>p:first-of-type,
 .phone>p:first-of-type,
 .online-service>p:first-of-type{
+    
+    padding-bottom: 24px;
+    padding-top: 24px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
