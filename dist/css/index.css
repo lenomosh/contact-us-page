@@ -64,3 +64,36 @@ nav .humburger{
     color: rgba(255, 255, 255, 0.6);
 }
 /* End of title styling */
+/* Style main content */
+.main-content{
+    padding: 0 212px 96px 212px ;
+    display: flex;
+    justify-content: space-between;
+    color: #1F3F68;
+}
+.main-content .information{
+    float: right;
+}
+.address p:not(:first-child),
+.phone p,
+.online-service p:not(:first-child){
+    
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+.address>p:first-of-type,
+.phone>p:first-of-type,
+.online-service>p:first-of-type{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    /* Blue_01 */
+
+    color: #1F3F68;
+}
