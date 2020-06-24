@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    padding: 40px 83px;
+}
+nav .logo{
+    float: left;
+    cursor: pointer;
+
+}
+nav .humburger{
+    cursor: pointer;
+    float: right;
+    padding-right: 20px;
+}
