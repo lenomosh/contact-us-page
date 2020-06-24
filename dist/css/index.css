@@ -98,10 +98,10 @@ span>svg{
     line-height: 26px;
     vertical-align: middle;
 }
-.address>p:first-of-type,
-.phone>p:first-of-type,
-.online-service>p:first-of-type,
-.input p:first-of-type{    
+.information .address>p:first-of-type,
+.information .phone>p:first-of-type,
+.information .online-service>p:first-of-type,
+.information .input p:first-of-type{    
     padding-bottom: 24px;
     padding-top: 24px;
     font-size: 20px;
@@ -172,4 +172,66 @@ span>svg{
 .map-wrapper{
     padding: 0 216px 96px 216px;
     margin:auto
+}
+footer{
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;    
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+footer .footer-wrapper{
+    padding-right: 197px;
+}
+.footer-wrapper>.work-with-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-wrapper>.work-with-us>.wrapper{    
+    padding-left: 213px;
+}
+.footer-wrapper>.work-with-us>.wrapper .header{
+    width: 317px;
+    font-size: 36px;
+}
+.footer-wrapper>.work-with-us>.wrapper .description{
+    width: 460px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+.footer-wrapper>.work-with-us>.lets-talk-button-wrapper{
+    width: 220px;
+    height: 56px;
+    line-height: 56px;
+    background: #5A98D0;
+    border-radius: 10px;
+    text-align: center;
+}
+.footer-wrapper>.work-with-us>.lets-talk-button-wrapper button{
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.footer-wrapper hr{
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+.footer-wrapper>.footer-links{
+    padding-left: 213px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-wrapper>.footer-links.column-one{
+    width: 219px;
+    font-size: 16px;
+}
+.footer-wrapper>.footer-links.column-one:not(:first-child){
+    padding-top: 24px;
+    font-size: 16px;
+}
+.footer-wrapper>.footer-links.column-one>.logo-wrapper>p{
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
 }
