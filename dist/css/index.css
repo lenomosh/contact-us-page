@@ -8,6 +8,17 @@
     font-weight: normal;
     src: url("../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf") format("opentype");
 }
+/* Clear default styling */
+button, input, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 body{
     font-family: 'Gilroy';
     width: 100%;
@@ -42,7 +53,6 @@ nav .humburger{
     height: 74px;
     left: 561px;
     top: 61px;
-    /* font-family: 'Gilroy-bold'; */
     font-size: 44px;
     line-height: 74px;
     text-align: center;
@@ -90,8 +100,8 @@ span>svg{
 }
 .address>p:first-of-type,
 .phone>p:first-of-type,
-.online-service>p:first-of-type{
-    
+.online-service>p:first-of-type,
+.input p:first-of-type{    
     padding-bottom: 24px;
     padding-top: 24px;
     font-size: 20px;
@@ -99,8 +109,67 @@ span>svg{
     line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    /* Blue_01 */
-
     color: #1F3F68;
+}
+
+/* Input section */
+.input{
+    width: 540px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+}
+.wrapper{
+    padding: 24px 56px;
+}
+.wrapper .form-input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    padding-left: 10px;
+}
+.wrapper .form-input label{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    padding-bottom: 8px;
+}
+.wrapper .form-input input:nth-child(-n+2),
+.wrapper .form-input textarea{
+    height: 72px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 42.33px;
+}
+.wrapper .form-input input:nth-child(-n+2)::placeholder,
+.wrapper .form-input input:nth-child(-n+2)::-moz-placeholder,
+.wrapper .form-input input:nth-child(-n+2)::-webkit-input-placeholder,
+.wrapper .form-input textarea::placeholder,
+.wrapper .form-input textarea::-moz-placeholder,
+.wrapper .form-input textarea::-webkit-input-placeholder{
+    font-size: 16px;
+    line-height: 30px;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.wrapper .form-input:nth-last-child(1) button{
+    width: 428px;
+    height: 72px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.map-wrapper{
+    padding: 0 216px 96px 216px;
+    margin:auto
 }
